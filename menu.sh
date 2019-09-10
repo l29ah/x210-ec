@@ -3,7 +3,7 @@ set -x
 dialog --checklist 'Choose the desired patches' 0 0 0 \
 	fn-swap		'Swap Fn and Ctrl keys'					off \
 	lcd-brightness	'Allow lowering brightness to 1%'			on \
-	fan-72deg	'Make fan blow at 100% speed on 72°C CPU [UNTESTED]'	on \
+	fan-72deg	'Make fan blow at 100% speed on 72+°C CPU temperature'	on \
 	2> selected
 for p in $(cat selected); do
 	fn="patches/$p.rapatch"
