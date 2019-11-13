@@ -5,6 +5,7 @@ dialog --checklist 'Choose the desired patches' 0 0 0 \
 	lcd-brightness		'Allow lowering LCD backlight brightness to 1%'		on \
 	lcd-backlight-925hz	'Increase the LCD backlight PWM frequency to ~925Hz'	on \
 	fan-72deg		'Make fan blow at 100% speed on 72+°C CPU temperature'	on \
+	enable-hotkeys		'Generate scancodes for all hotkeys'			on \
 	2> selected
 for p in $(cat selected); do
 	fn="patches/$p.rapatch"
