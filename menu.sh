@@ -1,6 +1,7 @@
 #!/bin/sh
 set -x
 dialog --checklist 'Choose the desired patches' 0 0 0 \
+	ec-hotpatch		'Enable EC hotpatching'					off \
 	fn-swap			'Swap Fn and Ctrl keys'					off \
 	lcd-brightness		'Allow lowering LCD backlight brightness to 1%'		on \
 	lcd-backlight-925hz	'Increase the LCD backlight PWM frequency to ~925Hz'	on \
